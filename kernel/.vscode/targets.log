@@ -1,0 +1,566 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Aug 15 14:32:38 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AGENT_FOLDER = /home/ubuntu/.vscode-server
+# environment
+XDG_SESSION_TYPE = tty
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+NEMU_HOME = /home/ubuntu/ics2021/nemu
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /home/ubuntu/os-workbench-2022/kernel
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"08bdb29c43b4c03defdaaecc51ad48b6.zh-cn","_translationsConfigFile":"/home/ubuntu/.vscode-server/data/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn/tcf.json","_cacheRoot":"/home/ubuntu/.vscode-server/data/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/ubuntu/.vscode-server/data/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn/6d9b74a70ca9c7733b29f0456fd8195364076dda","_corruptedFile":"/home/ubuntu/.vscode-server/data/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /home/ubuntu/.vscode-server/bin/6d9b74a70ca9c7733b29f0456fd8195364076dda/node
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/isa/x86_64.mk', line 2)
+CFLAGS = -O2 -MMD -Wall -Werror $(INCFLAGS) -D__ISA__=\"$(ISA)\" -D__ISA_$(shell echo $(ISA) | tr a-z A-Z)__ -D__ARCH__=$(ARCH) -D__ARCH_$(shell echo $(ARCH) | tr a-z A-Z | tr - _) -D__PLATFORM__=$(PLATFORM) -D__PLATFORM_$(shell echo $(PLATFORM) | tr a-z A-Z | tr - _) -DARCH_H=\"arch/$(ARCH).h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse
+# makefile (from '../Makefile.lab', line 3)
+COURSE := OS2022
+# makefile (from '../Makefile.lab', line 1)
+MAKEFILE_LIST :=  Makefile /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/x86_64-qemu.mk /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/isa/x86_64.mk /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/platform/qemu.mk /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/framework/main.d /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/pmm.d ../Makefile.lab
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 49)
+WORK_DIR = $(shell pwd)
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 88)
+CXXFLAGS = $(CFLAGS) -ffreestanding -fno-rtti -fno-exceptions
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 70)
+CC = $(CROSS_COMPILE)gcc
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 59)
+OBJS = $(addprefix $(DST_DIR)/, $(addsuffix .o, $(basename $(SRCS))))
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/ubuntu
+# makefile (from 'Makefile', line 5)
+AM_HOME := /home/ubuntu/os-workbench-2022/kernel/../abstract-machine
+# environment
+SSH_CONNECTION = 36.157.201.191 45853 10.0.12.5 22
+# environment
+PATH = /home/ubuntu/.vscode-server/bin/6d9b74a70ca9c7733b29f0456fd8195364076dda/bin/remote-cli:/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 72)
+LD = $(CROSS_COMPILE)ld
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/x86_64-qemu.mk', line 4)
+AM_SRCS := x86/qemu/start64.S x86/qemu/trap64.S x86/qemu/trm.c x86/qemu/cte.c x86/qemu/ioe.c x86/qemu/vme.c x86/qemu/mpe.c
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-116ca091-f2f6-4f24-9ebd-a42f88afb4f1.sock
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/platform/qemu.mk', line 3)
+LDFLAGS = -melf_x86_64 -N -Ttext-segment=0x00100000
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+SSH_AUTH_SOCK = /run/user/1000/vscode-ssh-auth-sock-855760200
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = localhost:10.0
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 55)
+IMAGE = $(abspath $(IMAGE_REL))
+# makefile (from '../Makefile.lab', line 4)
+URL := 'http://jyywiki.cn/static/submit-os2022.sh'
+# environment
+PWD = /home/ubuntu/os-workbench-2022/kernel
+# default
+.LOADED := 
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/platform/qemu.mk', line 12)
+BOOT_HOME := /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/src/x86/qemu/boot
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/ubuntu
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+LOGNAME = ubuntu
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 54)
+IMAGE_REL = build/$(NAME)-$(ARCH)
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 61)
+LINKAGE = $(OBJS) $(addsuffix -$(ARCH).a, $(join $(addsuffix /build/, $(addprefix $(AM_HOME)/, $(LIBS))), $(LIBS) ))
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 2)
+SRCS := framework/main.c ./src/pmm.c ./src/os.c
+# environment
+SHLVL = 1
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 69)
+AS = $(CROSS_COMPILE)gcc
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/isa/x86_64.mk', line 3)
+ASFLAGS = -MMD $(INCFLAGS) -m64 -fPIC
+# environment
+XDG_SESSION_ID = 37603
+# environment
+USER = ubuntu
+# makefile
+.DEFAULT_GOAL := html
+# makefile (from 'Makefile', line 1)
+NAME := kernel
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 75)
+READELF = $(CROSS_COMPILE)readelf
+# default
+MAKE_COMMAND := make
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 50)
+DST_DIR = $(WORK_DIR)/build/$(ARCH)
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_US.utf8:
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 79)
+INCFLAGS = $(addprefix -I, $(INC_PATH))
+# makefile (from 'Makefile', line 7)
+ARCH := x86_64-qemu
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_CLIENT = 36.157.201.191 45853 22
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 73)
+OBJDUMP = $(CROSS_COMPILE)objdump
+# environment
+BROWSER = /home/ubuntu/.vscode-server/bin/6d9b74a70ca9c7733b29f0456fd8195364076dda/bin/helpers/browser.sh
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 156)
+CLEAN_ALL = $(dir $(shell find . -mindepth 2 -name Makefile))
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/platform/qemu.mk', line 4)
+QEMU_FLAGS = -serial mon:stdio -machine accel=tcg -smp "$(smp)" -drive format=raw,file=$(IMAGE)
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/isa/x86_64.mk', line 1)
+CROSS_COMPILE := x86_64-linux-gnu-
+# 'override' directive
+.SHELLSTATUS := 0
+# default
+MAKEFILES := 
+# environment
+PROMPT_COMMAND = history -a; 
+# automatic
+<F = $(notdir $<)
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 71)
+CXX = $(CROSS_COMPILE)g++
+# environment
+LC_ALL = C
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 60)
+LIBS := am klib 
+# automatic
+^F = $(notdir $^)
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 74)
+OBJCOPY = $(CROSS_COMPILE)objcopy
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 78)
+INC_PATH := include/ framework/ /home/ubuntu/os-workbench-2022/kernel/include /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 56)
+ARCHIVE = $(WORK_DIR)/build/$(NAME)-$(ARCH).a
+# environment
+LANG = C
+# environment
+MOTD_SHOWN = pam
+# variable set hash-table stats:
+# Load=103/1024=10%, Rehash=0, Collisions=20/301=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 64514, inode 653891): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+/home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/%.o: %.c
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 106):
+	@mkdir -p $(dir $@) && echo + CC $<
+	@$(CC) -std=gnu11 $(CFLAGS) -c -o $@ $(realpath $<)
+
+/home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/%.o: %.cc
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 111):
+	@mkdir -p $(dir $@) && echo + CXX $<
+	@$(CXX) -std=c++17 $(CXXFLAGS) -c -o $@ $(realpath $<)
+
+/home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/%.o: %.cpp
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 116):
+	@mkdir -p $(dir $@) && echo + CXX $<
+	@$(CXX) -std=c++17 $(CXXFLAGS) -c -o $@ $(realpath $<)
+
+/home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/%.o: %.S
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 121):
+	@mkdir -p $(dir $@) && echo + AS $<
+	@$(AS) $(ASFLAGS) -c -o $@ $(realpath $<)
+
+# 4 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/arch/x86_64-qemu.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/x86_64-qemu.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-26 10:26:37.320472926
+#  File has been updated.
+#  Successfully updated.
+
+build-arg: image
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/platform/qemu.mk', line 10):
+	@( echo -n $(mainargs); ) | dd if=/dev/stdin of=$(IMAGE) bs=512 count=2 seek=1 conv=notrunc status=none
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/amdev.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+am:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'am'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 126):
+	@$(MAKE) -s -C $(AM_HOME)/$* archive
+
+.PHONY: html build-arg image image-dep archive run am klib clean clean-all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+include/spinlock.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+include/common.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/os.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+git:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '../Makefile.lab', line 12):
+	@git add $(shell find . -name "*.c") $(shell find . -name "*.h") -A --ignore-errors
+	@while (test -e .git/index.lock); do sleep 0.1; done
+	@(uname -a && uptime) | git commit -F - -q --author='tracer-nju <tracer@nju.edu.cn>' --no-verify --allow-empty
+	@sync
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 14:13:09.626119329
+#  File has been updated.
+#  Successfully updated.
+
+submit:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '../Makefile.lab', line 7):
+	@cd $(dir $(abspath $(lastword $(MAKEFILE_LIST)))) && \
+	  curl -sSLf '$(URL)' && \
+	  curl -sSLf '$(URL)' | bash
+
+test: git
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 15):
+	@gcc $(shell find src/ -name "*.c")  \
+		$(shell find test/ -name "*.c") \
+		-Iframework -Itest -DTEST -lpthread \
+		-o build/test
+	@build/test
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/framework/main.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 14:32:17.64385514
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/pmm.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 14:32:17.843855446
+#  File has been updated.
+#  Successfully updated.
+
+archive: /home/ubuntu/os-workbench-2022/kernel/build/kernel-x86_64-qemu.a
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/platform/qemu.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-26 10:26:37.320472926
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/framework/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/src/pmm.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+klib:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'klib'
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 126):
+	@$(MAKE) -s -C $(AM_HOME)/$* archive
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/os.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/isa/x86_64.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-26 10:26:37.320472926
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/klib.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+image-dep: /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/framework/main.o /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/pmm.o /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/os.o am am klib
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 147):
+	@echo \# Creating image [$(ARCH)]
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/framework/main.o: /home/ubuntu/os-workbench-2022/kernel/framework/main.c framework/kernel.h /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/am.h /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/arch/x86_64-qemu.h /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/amdev.h /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/klib.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/ubuntu/os-workbench-2022/kernel/build/kernel-x86_64-qemu.a: /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/framework/main.o /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/pmm.o /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/os.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 135):
+	@echo + AR "->" $(shell realpath $@ --relative-to .)
+	@ar rcs $(ARCHIVE) $(OBJS)
+
+/home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/pmm.o: /home/ubuntu/os-workbench-2022/kernel/src/pmm.c include/common.h framework/kernel.h /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/am.h /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/arch/x86_64-qemu.h /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/amdev.h /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/klib.h /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/klib-macros.h include/pmm.h include/spinlock.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+image: /home/ubuntu/os-workbench-2022/kernel/build/kernel-x86_64-qemu.elf image-dep git
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/platform/qemu.mk', line 15):
+	@$(MAKE) -s -C $(BOOT_HOME)
+	@echo + CREATE "->" $(IMAGE_REL)
+	@( cat $(BOOT_HOME)/bootblock.o; head -c 1024 /dev/zero; cat $(IMAGE).elf ) > $(IMAGE)
+
+run: build-arg
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/scripts/x86_64-qemu.mk', line 13):
+	@qemu-system-x86_64 $(QEMU_FLAGS)
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 152):
+	rm -rf Makefile.html $(WORK_DIR)/build/
+
+html:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 5):
+	cat Makefile | sed 's/^\([^#]\)/    \1/g' | markdown_py > Makefile.html
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-26 10:26:37.320472926
+#  File has been updated.
+#  Successfully updated.
+
+/home/ubuntu/os-workbench-2022/kernel/build/kernel-x86_64-qemu.elf: /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/framework/main.o /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/pmm.o /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/os.o am am klib
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/Makefile', line 130):
+	@echo + LD "->" $(IMAGE_REL).elf
+	@$(LD) $(LDFLAGS) -o $(IMAGE).elf --start-group $(LINKAGE) --end-group
+
+clean-all: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/klib-macros.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+include/pmm.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+framework/kernel.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../Makefile.lab:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-26 10:26:28.872460201
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/am.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=42/1024=4%, Rehash=0, Collisions=4/121=3%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 58 / storage = 1736 B / avg = 29 B
+# current buf: size = 8162 B / used = 1736 B / count = 58 / avg = 29 B
+
+# strcache performance: lookups = 143 / hit rate = 59%
+# hash-table stats:
+# Load=58/8192=1%, Rehash=0, Collisions=1/143=1%
+# Finished Make data base on Mon Aug 15 14:32:38 2022
+
+ 

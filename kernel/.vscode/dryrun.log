@@ -1,0 +1,73 @@
+make image --dry-run --keep-going --print-directory
+make: Entering directory '/home/ubuntu/os-workbench-2022/kernel'
+ 
+# Building kernel-image [x86_64-qemu]
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/ && echo + CC src/pmm.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -Iinclude/ -Iframework/ -I/home/ubuntu/os-workbench-2022/kernel/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/pmm.o /home/ubuntu/os-workbench-2022/kernel/src/pmm.c
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/ && echo + CC src/os.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -Iinclude/ -Iframework/ -I/home/ubuntu/os-workbench-2022/kernel/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/os.o /home/ubuntu/os-workbench-2022/kernel/src/os.c
+make -s -C /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am archive
+ 
+make[1]: Entering directory '/home/ubuntu/os-workbench-2022/abstract-machine/am'
+# Building am-archive [x86_64-qemu]
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/ && echo + CC src/x86/qemu/trm.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/src -I/home/ubuntu/os-workbench-2022/abstract-machine/am/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/trm.o /home/ubuntu/os-workbench-2022/abstract-machine/am/src/x86/qemu/trm.c
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/ && echo + CC src/x86/qemu/cte.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/src -I/home/ubuntu/os-workbench-2022/abstract-machine/am/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/cte.o /home/ubuntu/os-workbench-2022/abstract-machine/am/src/x86/qemu/cte.c
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/ && echo + CC src/x86/qemu/ioe.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/src -I/home/ubuntu/os-workbench-2022/abstract-machine/am/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/ioe.o /home/ubuntu/os-workbench-2022/abstract-machine/am/src/x86/qemu/ioe.c
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/ && echo + CC src/x86/qemu/vme.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/src -I/home/ubuntu/os-workbench-2022/abstract-machine/am/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/vme.o /home/ubuntu/os-workbench-2022/abstract-machine/am/src/x86/qemu/vme.c
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/ && echo + CC src/x86/qemu/mpe.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/src -I/home/ubuntu/os-workbench-2022/abstract-machine/am/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/mpe.o /home/ubuntu/os-workbench-2022/abstract-machine/am/src/x86/qemu/mpe.c
+ 
+echo + AR "->" build/am-x86_64-qemu.a
+ar rcs /home/ubuntu/os-workbench-2022/abstract-machine/am/build/am-x86_64-qemu.a /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/start64.o /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/trap64.o /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/trm.o /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/cte.o /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/ioe.o /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/vme.o /home/ubuntu/os-workbench-2022/abstract-machine/am/build/x86_64-qemu/src/x86/qemu/mpe.o
+ 
+make[1]: Leaving directory '/home/ubuntu/os-workbench-2022/abstract-machine/am'
+make -s -C /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib archive
+ 
+make[1]: Entering directory '/home/ubuntu/os-workbench-2022/abstract-machine/klib'
+# Building klib-archive [x86_64-qemu]
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/ && echo + CC src/int64.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -I/home/ubuntu/os-workbench-2022/abstract-machine/klib/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/int64.o /home/ubuntu/os-workbench-2022/abstract-machine/klib/src/int64.c
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/ && echo + CC src/cpp.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -I/home/ubuntu/os-workbench-2022/abstract-machine/klib/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/cpp.o /home/ubuntu/os-workbench-2022/abstract-machine/klib/src/cpp.c
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/ && echo + CC src/stdlib.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -I/home/ubuntu/os-workbench-2022/abstract-machine/klib/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/stdlib.o /home/ubuntu/os-workbench-2022/abstract-machine/klib/src/stdlib.c
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/ && echo + CC src/stdio.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -I/home/ubuntu/os-workbench-2022/abstract-machine/klib/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/stdio.o /home/ubuntu/os-workbench-2022/abstract-machine/klib/src/stdio.c
+ 
+mkdir -p /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/ && echo + CC src/string.c
+x86_64-linux-gnu-gcc -std=gnu11 -O2 -MMD -Wall -Werror -I/home/ubuntu/os-workbench-2022/abstract-machine/klib/include -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/include/ -I/home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/include/ -D__ISA__=\"x86_64\" -D__ISA_X86_64__ -D__ARCH__=x86_64-qemu -D__ARCH_X86_64_QEMU -D__PLATFORM__=qemu -D__PLATFORM_QEMU -DARCH_H=\"arch/x86_64-qemu.h\" -fno-asynchronous-unwind-tables -fno-builtin -fno-stack-protector -Wno-main -U_FORTIFY_SOURCE -m64 -fPIC -mno-sse -c -o /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/string.o /home/ubuntu/os-workbench-2022/abstract-machine/klib/src/string.c
+ 
+echo + AR "->" build/klib-x86_64-qemu.a
+ar rcs /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/klib-x86_64-qemu.a /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/int64.o /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/cpp.o /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/stdlib.o /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/stdio.o /home/ubuntu/os-workbench-2022/abstract-machine/klib/build/x86_64-qemu/src/string.o
+make[1]: Leaving directory '/home/ubuntu/os-workbench-2022/abstract-machine/klib'
+ 
+echo + LD "->" build/kernel-x86_64-qemu.elf
+x86_64-linux-gnu-ld -melf_x86_64 -N -Ttext-segment=0x00100000 -o /home/ubuntu/os-workbench-2022/kernel/build/kernel-x86_64-qemu.elf --start-group /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/framework/main.o /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/pmm.o /home/ubuntu/os-workbench-2022/kernel/build/x86_64-qemu/./src/os.o /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/build/am-x86_64-qemu.a /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/klib/build/klib-x86_64-qemu.a --end-group
+echo \# Creating image [x86_64-qemu]
+ 
+git add ./src/pmm.c ./src/os.c ./framework/main.c ./test/test.c ./include/spinlock.h ./include/common.h ./include/pmm.h ./framework/kernel.h ./test/spinlock.h ./test/common.h ./test/pmm.h ./test/am.h ./test/thread.h -A --ignore-errors
+while (test -e .git/index.lock); do sleep 0.1; done
+(uname -a && uptime) | git commit -F - -q --author='tracer-nju <tracer@nju.edu.cn>' --no-verify --allow-empty
+sync
+ 
+make -s -C /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/src/x86/qemu/boot
+ 
+echo + CREATE "->" build/kernel-x86_64-qemu
+( cat /home/ubuntu/os-workbench-2022/kernel/../abstract-machine/am/src/x86/qemu/boot/bootblock.o; head -c 1024 /dev/zero; cat /home/ubuntu/os-workbench-2022/kernel/build/kernel-x86_64-qemu.elf ) > /home/ubuntu/os-workbench-2022/kernel/build/kernel-x86_64-qemu
+make: Leaving directory '/home/ubuntu/os-workbench-2022/kernel'
+ 
