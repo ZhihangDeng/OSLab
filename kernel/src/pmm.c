@@ -46,7 +46,7 @@ static inline page_t *get_list_entry(list_head *list) {
 /* 将空闲页放回进程地址空间 */
 void put_free_page(list_head *list, int num) {
   spin_lock(&global_lk);
-
+  
   spin_unlock(&global_lk);
 }
 
